@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+}
+#lightbox {
+  margin: 0 auto;
+  width: 1000px;
+}
+#lightbox figure {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  margin: 1%;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+}
+#lightbox figure:hover figcaption {
+  border: 1px solid white;
+  padding: 15px;
+}
+#lightbox figure:hover img {
+  margin-left: -10%;
+  margin-top: -10%;
+  width: 120%;
+}
+#lightbox figure img {
+  width: 100%;
+  transition: all .5s linear;
+}
+#lightbox figure figcaption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 5px 5px;
+  transition: all .5s linear;
+}
+.lightboxan {
+  position: fixed;
+  background: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: none;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAAAAAAeW/F+AAAAOklEQVR4Ae3QIQrAUADD0Lj2AIV//5uO+RE59asKz4U177rz9VAdqkU1qAbVoBpUg2pR3V/VbrVb7QHULigVcx3ZmQAAAABJRU5ErkJggg==');
+}
+.lightboxup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  border: 5px solid white;
+}
+.lightboxup .lightshow {
+  width: 500px;
+  position: relative;
+}
+.lightboxup .lightshow img {
+  width: 100%;
+  transition: linear all 0.3s;
+}
+.lightboxup .lightshow img:nth-of-type(2) {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  cursor: pointer;
+  width: 50px;
+}
+.lightboxup .lightshow img:nth-of-type(2):hover {
+  width: 55px;
+}
+.lightboxup .lightshow img:nth-of-type(3) {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 45%;
+  width: 50px;
+}
+.lightboxup .lightshow img:nth-of-type(3):hover {
+  width: 55px;
+}
+.lightboxup .lightshow img:nth-of-type(4) {
+  cursor: pointer;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 50px;
+}
+.lightboxup .lightshow img:nth-of-type(4):hover {
+  width: 55px;
+}

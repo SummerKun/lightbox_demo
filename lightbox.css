@@ -38,7 +38,7 @@
   padding: 5px 5px;
   transition: all .5s linear;
 }
-#lightbox .lightboxan {
+.lightboxan {
   position: fixed;
   background: black;
   opacity: 0.8;
@@ -48,7 +48,7 @@
   display: none;
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAAAAAAeW/F+AAAAOklEQVR4Ae3QIQrAUADD0Lj2AIV//5uO+RE59asKz4U177rz9VAdqkU1qAbVoBpUg2pR3V/VbrVb7QHULigVcx3ZmQAAAABJRU5ErkJggg==');
 }
-#lightbox .lightboxup {
+.lightboxup {
   display: none;
   position: fixed;
   z-index: 1000;
@@ -59,41 +59,41 @@
   border-radius: 10px;
   border: 5px solid white;
 }
-#lightbox .lightboxup .lightshow {
+.lightboxup .lightshow {
   width: 500px;
   position: relative;
 }
-#lightbox .lightboxup .lightshow img {
+.lightboxup .lightshow img {
   width: 100%;
   transition: linear all 0.3s;
 }
-#lightbox .lightboxup .lightshow img:nth-of-type(2) {
+.lightboxup .lightshow img:nth-of-type(2) {
   position: absolute;
   left: 0;
   top: 45%;
   cursor: pointer;
   width: 50px;
 }
-#lightbox .lightboxup .lightshow img:nth-of-type(2):hover {
+.lightboxup .lightshow img:nth-of-type(2):hover {
   width: 55px;
 }
-#lightbox .lightboxup .lightshow img:nth-of-type(3) {
+.lightboxup .lightshow img:nth-of-type(3) {
   cursor: pointer;
   position: absolute;
   right: 0;
   top: 45%;
   width: 50px;
 }
-#lightbox .lightboxup .lightshow img:nth-of-type(3):hover {
+.lightboxup .lightshow img:nth-of-type(3):hover {
   width: 55px;
 }
-#lightbox .lightboxup .lightshow img:nth-of-type(4) {
+.lightboxup .lightshow img:nth-of-type(4) {
   cursor: pointer;
   position: absolute;
   right: -10px;
   top: -10px;
   width: 50px;
 }
-#lightbox .lightboxup .lightshow img:nth-of-type(4):hover {
+.lightboxup .lightshow img:nth-of-type(4):hover {
   width: 55px;
 }
